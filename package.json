@@ -1,0 +1,34 @@
+{
+  "name": "vue-admin-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.0",
+    "element-plus": "^2.5.0",
+    "pinia": "^2.1.0",
+    "sortablejs": "^1.15.6",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^7.1.2",
+    "happy-dom": "^20.0.10",
+    "jsdom": "^27.2.0",
+    "postcss": "^8.4.0",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.4.0",
+    "terser": "^5.44.1",
+    "vite": "^5.0.0",
+    "vitest": "^4.0.12"
+  }
+}
