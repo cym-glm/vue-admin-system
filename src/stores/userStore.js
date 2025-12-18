@@ -28,16 +28,18 @@ export const useUserStore = defineStore('user', () => {
   }
 
   const ALL_MENUS = [
-    { path: '/dashboard', title: '数据仪表盘', roles: ['admin', 'manager', 'user'], icon: 'DataLine' },
-    { path: '/table', title: '数据表格', roles: ['admin', 'manager', 'user'], icon: 'Grid' },
-    { path: '/users', title: '用户管理', roles: ['admin', 'manager', 'user'], icon: 'User' },
-    { path: '/permissions', title: '权限管理', roles: ['admin', 'manager', 'user'], icon: 'Lock' },
-    { path: '/components', title: '组件封装', roles: ['admin', 'manager', 'user'], icon: 'Collection' },
-    { path: '/table-encap', title: 'table表格封装', roles: ['admin', 'manager', 'user'], icon: 'List' },
-    { path: '/admin-menu', title: 'Admin菜单', roles: ['admin'], icon: 'Setting' },
-    { path: '/manager-menu', title: 'Manager菜单', roles: ['admin', 'manager'], icon: 'Management' },
-    { path: '/user-menu', title: 'User菜单', roles: ['admin', 'manager', 'user'], icon: 'UserFilled' }
-  ]
+      { path: '/dashboard', title: '数据仪表盘', roles: ['admin', 'manager', 'user'], icon: 'DataLine' },
+      { path: '/table', title: '数据表格', roles: ['admin', 'manager', 'user'], icon: 'Grid' },
+      { path: '/users', title: '用户管理', roles: ['admin', 'manager', 'user'], icon: 'User' },
+      { path: '/permissions', title: '权限管理', roles: ['admin', 'manager', 'user'], icon: 'Lock' },
+      { path: '/components', title: '组件封装', roles: ['admin', 'manager', 'user'], icon: 'Collection' },
+      { path: '/table-encap', title: 'table表格封装', roles: ['admin', 'manager', 'user'], icon: 'List' },
+      { path: '/admin-menu', title: 'Admin菜单', roles: ['admin'], icon: 'Setting' },
+      { path: '/manager-menu', title: 'Manager菜单', roles: ['admin', 'manager'], icon: 'Management' },
+      { path: '/user-menu', title: 'User菜单', roles: ['admin', 'manager', 'user'], icon: 'UserFilled' },
+      { path: '/import-file', title: '文件导入', roles: ['admin', 'manager', 'user'], icon: 'Upload' },
+      { path: '/export-file', title: '文件导出', roles: ['admin', 'manager', 'user'], icon: 'Download' },
+  ];
 
   const loadMenus = async () => {
     const role = currentUser.value.role
