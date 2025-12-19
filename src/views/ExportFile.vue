@@ -179,6 +179,10 @@
 import { ref, reactive, computed } from 'vue'
 import { Download } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
+import { useI18nModule } from '@/composables/useI18nModule'
+
+// 自动加载导入导出模块的语言包
+useI18nModule('import-export')
 
 // 组件状态
 const isExporting = ref(false)

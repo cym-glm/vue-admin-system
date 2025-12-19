@@ -39,6 +39,7 @@ export const useUserStore = defineStore('user', () => {
       { path: '/user-menu', title: 'User菜单', roles: ['admin', 'manager', 'user'], icon: 'UserFilled' },
       { path: '/import-file', title: '文件导入', roles: ['admin', 'manager', 'user'], icon: 'Upload' },
       { path: '/export-file', title: '文件导出', roles: ['admin', 'manager', 'user'], icon: 'Download' },
+      { path: '/internationalization', title: '国际化', roles: ['admin', 'manager', 'user'], icon: 'Operation' },
   ];
 
   const loadMenus = async () => {
