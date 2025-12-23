@@ -81,6 +81,12 @@ const router = createRouter({
                     component: () => import('../views/Internationalization.vue'),
                     meta: { title: '国际化', roles: ['admin', 'manager', 'user'] },
                 },
+                {
+                    path: 'intelligent-agent',
+                    name: 'IntelligentAgent',
+                    component: () => import('../views/IntelligentAgent.vue'),
+                    meta: { title: '智能体', roles: ['admin', 'manager', 'user'] },
+                },
             ],
         },
     ],

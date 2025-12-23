@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.0",
+    "@logicflow/core": "^2.2.0-alpha.3",
+    "@logicflow/extension": "^2.2.0-alpha.3",
     "element-plus": "^2.5.0",
     "pinia": "^2.1.0",
     "sortablejs": "^1.15.6",
