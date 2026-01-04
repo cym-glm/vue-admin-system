@@ -320,7 +320,7 @@ const openExport = () => {
   exportDialog.value = true
 }
 const buildHtmlTable = (rows, cols) => {
-  const head = `<tr>${cols.map(c => `<th style="border:1px solid #ddd;padding:6px;background:#f7f7f7">${c.label}</th>`).join('')}</tr>`
+  const head = `<tr>${cols.map(c => `<th style="border:1px solid #ddd;padding:6px;background:#ff0000;color:#ffffff;font-weight:bold;text-align:center">${c.label}</th>`).join('')}</tr>`
   const body = rows.map(r => `<tr>${cols.map(c => `<td style="border:1px solid #ddd;padding:6px">${formatCell(r,c) ?? ''}</td>`).join('')}</tr>`).join('')
   return `<table style="border-collapse:collapse;width:100%">${head}${body}</table>`
 }
